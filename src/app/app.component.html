@@ -1,0 +1,22 @@
+<div *ngIf="afAuth.user | async as user; else showLogin">
+  <!-- <h1>Hello {{ user.displayName }}!</h1> -->
+  <!-- <img class="profile-img" src = "{{user.photoURL}}" >
+  <br>
+  <button class="btn btn-danger waves-light" mdbWavesEffect (click)="logout()">Logout</button> -->
+  <router-outlet></router-outlet>
+</div>
+<ng-template #showLogin>
+  <div class="text-center">
+    <h1 class="display-4">Please login</h1>
+    <!-- <p>Please login.</p> -->
+    <!-- <button (click)="login()">Login with Google</button> -->
+    <button (click)="login()" class="btn btn-danger waves-light" mdbWavesEffect>Google
+      <i class="fa fa-google ml-1"></i>
+    </button>
+
+    <button (click)="loginFb()" class="btn btn-primary waves-light" mdbWavesEffect>Facebook
+      <i class="fa fa-facebook ml-1"></i>
+    </button>
+  </div>
+
+</ng-template>
