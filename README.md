@@ -3,8 +3,8 @@ A personalised, collaborative, To-Do List application.  Add as many people as yo
 
 # Features
 <ul>
-  <li>Maintain your own To-Do lists.</li>
   <li>Create a group from existing users, and keep track of group goals and progress.</li>
+  <li>Maintain your own To-Do lists.</li>
   <li>Edit any existing task.</li>
   <li>Remove tasks from lists when they're completed.</li>
 </ul>
